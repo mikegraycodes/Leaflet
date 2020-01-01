@@ -1,0 +1,23 @@
+.assetItem ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.assetItem li {
+  float: left;
+}
+
+.assetItem li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.assetItem img {
+  height: 25px;
+  width: 25px;
+}

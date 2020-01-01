@@ -1,0 +1,17 @@
+.mapOverlay {
+  z-index: 999;
+  background-color: rgba(white, 0.6);
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  height: 50%;
+  width: 15%;
+  max-width: 300px;
+}
+
+.mapOverlay li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}

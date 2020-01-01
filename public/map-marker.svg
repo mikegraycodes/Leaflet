@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="51px" viewBox="0 0 46 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Map Marker</title>
+    <defs>
+        <circle id="path-1" cx="19" cy="28" r="19"></circle>
+        <filter x="-15.8%" y="-15.8%" width="131.6%" height="131.6%" filterUnits="objectBoundingBox" id="dot-shadow">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Map-V.2" transform="translate(-213.000000, -237.000000)">
+            <g id="Map-Marker" transform="translate(217.000000, 237.000000)">
+                <g id="Oval">
+                    <use fill="currentColor" fill-opacity="1" filter="url(#dot-shadow)" xlink:href="#path-1"></use>
+                    <circle id="map-marker-dot" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="square" fill="#F7B500" fill-rule="evenodd" cx="19" cy="28" r="18"></circle>
+                </g>
+                <circle id="Oval" fill="#FFFFFF" cx="25.5" cy="9.5" r="9.5"></circle>
+                <path fill="#000000" d="M29.0645161,16 L27.9032258,16 L27.9032258,14.4705882 L22.0967742,14.4705882 L22.0967742,16 L20.9354839,16 L20.9354839,14.4705882 L19.7741935,14.4705882 L19.7741935,8.35294118 L19,8.35294118 L19,5.67647059 L19.7741935,5.67647059 L19.7741935,4.52941176 L20.9354839,4.52941176 L20.9354839,11.0294118 L29.0645161,11.0294118 L29.0645161,4.52941176 L30.2258065,4.52941176 L30.2258065,5.67647059 L31,5.67647059 L31,8.35294118 L30.2258065,8.35294118 L30.2258065,14.4705882 L29.0645161,14.4705882 L29.0645161,16 Z M21.9032258,11.7941176 C21.3687567,11.7941176 20.9354839,12.2220808 20.9354839,12.75 C20.9354839,13.2779192 21.3687567,13.7058824 21.9032258,13.7058824 C22.4376949,13.7058824 22.8709677,13.2779192 22.8709677,12.75 C22.8709677,12.2220808 22.4376949,11.7941176 21.9032258,11.7941176 Z M28.0967742,11.7941176 C27.5623051,11.7941176 27.1290323,12.2220808 27.1290323,12.75 C27.1290323,13.2779192 27.5623051,13.7058824 28.0967742,13.7058824 C28.6312433,13.7058824 29.0645161,13.2779192 29.0645161,12.75 C29.0645161,12.2220808 28.6312433,11.7941176 28.0967742,11.7941176 Z M30.2258065,3 L30.2258065,3.76470588 L19.7741935,3.76470588 L19.7741935,3 L30.2258065,3 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>
