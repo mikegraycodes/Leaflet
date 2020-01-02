@@ -11,11 +11,11 @@ import Home from "./Home";
 
 export const Routes = (
   <Switch>
-    <Route exact={true} path="/login" component={Callback} />
-    <Route exact={true} path="/logout" component={Logout} />
-    <Route exact={true} path="/logout/callback" component={LogoutCallback} />
-    <Route exact={true} path="/silentrenew" component={SilentRenew} />
+    <Route exact path="/login" component={Callback} />
+    <Route exact path="/logout" component={Logout} />
+    <Route exact path="/logout/callback" component={LogoutCallback} />
+    <Route exact path="/silentrenew" component={SilentRenew} />
     <PrivateRoute path="/map" component={Map} />
-    <Route exact={true} path="/" component={Home} />
+    <Route exact path="/" component={Home} />
   </Switch>
 );

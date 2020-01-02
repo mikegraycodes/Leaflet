@@ -1,7 +1,14 @@
 import React, { Component } from "react";
 import { AuthProvider } from "./providers/AuthProvider";
-import { BrowserRouter } from "react-router-dom";
-import { Routes } from "./Routes";
+import { Route } from "react-router-dom";
+
+import { Callback } from "./Components/Auth/Callback";
+import { Logout } from "./Components/Auth/Logout";
+import { LogoutCallback } from "./Components/Auth/LogoutCallback";
+import { PrivateRoute } from "./PrivateRoute";
+import { SilentRenew } from "./Components/Auth/SilentRenew";
+import Map from "./Components/Map/Map";
+import Home from "./Home";
 import Nav from "./Nav";
 
 class App extends Component {
@@ -9,8 +16,13 @@ class App extends Component {
     return (
       <>
         <AuthProvider>
-          <Nav></Nav>
-          <BrowserRouter children={Routes} basename={"/"} />
+          <Nav />
+          <Route exact path="/login" component={Callback} />
+          <Route exact path="/logout" component={Logout} />
+          <Route exact path="/logout/callback" component={LogoutCallback} />
+          <Route exact path="/silentrenew" component={SilentRenew} />
+          <PrivateRoute path="/map" component={Map} />
+          <Route exact path="/" component={Home} />
         </AuthProvider>
       </>
       // <AuthContext.Provider value={auth}>

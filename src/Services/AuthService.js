@@ -113,6 +113,7 @@ export default class AuthService {
   };
 
   logout = () => {
+    debugger;
     this.UserManager.signoutRedirect({
       id_token_hint: localStorage.getItem("id_token")
     });
