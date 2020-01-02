@@ -5,16 +5,18 @@ class AssetItem extends Component {
   render() {
     return (
       <div className="assetItem">
-        <li>
-          <img src="bus0.png" />
-        </li>
-        <li>FleetId</li>
-        <li>
-          <img src="bus0.png" />
-        </li>
-        <li>WIFI</li>
-        <li>Line</li>
-        <li>Button</li>
+        <ul>
+          <li>
+            <img src="bus0.png" />
+          </li>
+          <li>FleetId</li>
+          <li>
+            <img src="bus0.png" />
+          </li>
+          <li>WIFI</li>
+          <li>Line</li>
+          <li>Button</li>
+        </ul>
       </div>
     );
   }

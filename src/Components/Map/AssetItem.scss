@@ -1,19 +1,21 @@
 .assetItem ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   overflow: hidden;
 }
 
 .assetItem li {
   float: left;
+  padding: 0px;
+  margin: 0px;
 }
 
 .assetItem li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0px;
   text-decoration: none;
 }
 

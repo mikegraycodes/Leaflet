@@ -22,7 +22,7 @@ class Map extends React.Component {
       })
       .addTo(this.map);
 
-    var points = [];
+    //var points = [];
 
     var marker = L.marker([lat, long]).addTo(this.map);
     marker.bindPopup("<b>Hello world!</b><br>I am a popup.").openPopup();

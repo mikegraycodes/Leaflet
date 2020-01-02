@@ -1,12 +1,25 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { AuthConsumer } from "./providers/AuthProvider";
 
 class Nav extends Component {
   render() {
-    const { isAuthenticated, login, logout, userHasScopes } = this.props.auth;
     return (
       <nav>
-        <ul>
+        <ul className="nav-right">
+          <li>
+            <AuthConsumer>
+              {({ isAuthenticated, logout, signinRedirect }) => {
+                return (
+                  <button onClick={isAuthenticated() ? logout : signinRedirect}>
+                    {isAuthenticated() ? "Log Out" : "Log In"}
+                  </button>
+                );
+              }}
+            </AuthConsumer>
+          </li>
+        </ul>
+        <ul className="nav-left">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -18,21 +31,6 @@ class Nav extends Component {
           </li>
           <li>
             <Link to="/public">Public</Link>
-          </li>
-          {isAuthenticated && (
-            <li>
-              <Link to="/private">Private</Link>
-            </li>
-          )}
-          {isAuthenticated && userHasScopes(["read:courses"]) && (
-            <li>
-              <Link to="/courses">Courses</Link>
-            </li>
-          )}
-          <li>
-            <button onClick={isAuthenticated() ? logout : login}>
-              {isAuthenticated() ? "Log Out" : "Log In"}
-            </button>
           </li>
         </ul>
       </nav>
